@@ -23,6 +23,8 @@ BuildRequires:	postgresql-backend-devel
 BuildRequires:	rpm-devel
 BuildRequires:	slang-devel
 BuildRequires:	trurlib-devel
+BuildRequires:	conflib-devel
+BuildRequires:	conflib-static
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_sysconfdir	/etc
