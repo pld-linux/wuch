@@ -1,5 +1,5 @@
 Summary:	RPM handler
-Summary(pl):	narzêdzie do obs³ugi RPMów
+Summary(pl):	Narzêdzie do obs³ugi RPMów
 Name:		wuch
 Version:	0.21.0
 Release:	1
@@ -54,6 +54,7 @@ pakietów RPM.
 
 %package -n mop_server
 Summary:	mop_server
+Summary(pl):	Serwer mop
 Group:		Applications/System
 Group(cs):	Aplikace/Systém
 Group(da):	Programmer/System
@@ -87,6 +88,7 @@ zainstalowac. Ten program wci±¿ nie jest skoñczony.
 
 %package BOOT
 Summary:	%{name} for bootdisk
+Summary(pl):	%{name} na bootkietkê
 Group:		Applications/System
 Group(cs):	Aplikace/Systém
 Group(da):	Programmer/System
@@ -108,6 +110,9 @@ Group(uk):	ğÒÉËÌÁÄÎ¦ ğÒÏÇÒÁÍÉ/óÉÓÔÅÍÁ
 %description BOOT
 %{name} for bootdisk.
 
+%description BOOT -l pl
+%{name} na bootkietkê.
+
 %prep
 %setup -q
 
@@ -126,7 +131,7 @@ install $RPM_BUILD_ROOT%{_bindir}/wuch wuch-BOOT
 %{__make} distclean
 %endif
 
-%configure 
+%configure
 %{__make}
 
 %install
