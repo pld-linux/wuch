@@ -23,6 +23,9 @@ BuildRequires:	rpm-devel
 BuildRequires:	slang-devel
 BuildRequires:	trurlib-devel
 BuildRequires:	conflib-static
+%if %{?BOOT:1}%{!?BOOT:0}
+BuildRequires:	trurlib-static
+%endif
 Requires:	dml
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
