@@ -60,6 +60,11 @@ Group:		Applications/System
 %setup -q
 
 %build
+aclocal
+autoheader
+automake --gnu
+autoconf
+
 %if %{?BOOT:1}%{!?BOOT:0}
 %configure --without-mop-server --disable-shared --disable-modular
 %{__make}
