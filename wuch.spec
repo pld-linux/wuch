@@ -2,7 +2,7 @@ Summary:	RPM handler
 Summary(pl):	narzêdzie do obs³ugi RPMów
 Name:		wuch
 Version:	0.17.6
-Release:	2
+Release:	0
 License:	GPL
 Group:		Applications/System
 Group(de):	Applikationen/System
