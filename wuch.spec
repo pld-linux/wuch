@@ -9,6 +9,7 @@ Group(de):	Applikationen/System
 Group(pl):	Aplikacje/System
 Source0:	ftp://ftp.pld.org.pl/software/wuch/%{name}-%{version}.tar.gz
 BuildRequires:	bzip2-devel
+BuildRequires:	conflib-devel
 BuildRequires:	db3-devel
 BuildRequires:	db1-devel
 BuildRequires:	newt-devel
