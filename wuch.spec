@@ -1,7 +1,7 @@
 Summary:	RPM handler
 Summary(pl):	narzêdzie do obs³ugi RPMów
 Name:		wuch
-Version:	0.17.4
+Version:	0.17.5
 Release:	2
 License:	GPL
 Group:		Applications/System
@@ -36,6 +36,17 @@ Group(de):	Applikationen/System
 Group(pl):	Aplikacje/System
 
 %description -n mop_server
+MOP stands from Massive Opinion Project. It (will) allow users to grade
+any package from distribution in set of categories (difrent for any package),
+and browse statistic to decide if upgrade soma package or not.
+It's still not finisched.
+
+%description -n mop_server -l pl
+MOP to Masowy Projekt Opiniowania pakietów. Umo¿liwi on u¿ytkownikom ocenianie 
+pakietów pochodz±cych z dystrybucji w ró¿nych kategoriach -- zaleznych od 
+pakietu, oraz przegladanie tak powstalych statystyk w celu zdecydowania czy dany
+paikiet pracuje wystarczajaco dobrze by go zainstalowac.
+Ten program wci±¿ nie jest skoñczony.
 
 %prep
 %setup -q
