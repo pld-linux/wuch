@@ -5,22 +5,6 @@ Version:	0.21.0
 Release:	1
 License:	GPL
 Group:		Applications/System
-Group(cs):	Aplikace/Systém
-Group(da):	Programmer/System
-Group(de):	Applikationen/System
-Group(es):	Aplicaciones/Sistema
-Group(fr):	Applications/Système
-Group(is):	Forrit/Kerfisforrit
-Group(it):	Applicazioni/Sistema
-Group(ja):	¥¢¥×¥ê¥±¡¼¥·¥ç¥ó/¥·¥¹¥Æ¥à
-Group(no):	Applikasjoner/System
-Group(pl):	Aplikacje/System
-Group(pt):	Aplicações/Sistema
-Group(pt_BR):	Aplicações/Sistema
-Group(ru):	ğÒÉÌÏÖÅÎÉÑ/óÉÓÔÅÍÁ
-Group(sl):	Programi/Sistem
-Group(sv):	Tillämpningar/System
-Group(uk):	ğÒÉËÌÁÄÎ¦ ğÒÏÇÒÁÍÉ/óÉÓÔÅÍÁ
 Source0:	ftp://ftp.pld.org.pl/software/wuch/%{name}-%{version}.tar.gz
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -56,22 +40,6 @@ pakietów RPM.
 Summary:	mop_server
 Summary(pl):	Serwer mop
 Group:		Applications/System
-Group(cs):	Aplikace/Systém
-Group(da):	Programmer/System
-Group(de):	Applikationen/System
-Group(es):	Aplicaciones/Sistema
-Group(fr):	Applications/Système
-Group(is):	Forrit/Kerfisforrit
-Group(it):	Applicazioni/Sistema
-Group(ja):	¥¢¥×¥ê¥±¡¼¥·¥ç¥ó/¥·¥¹¥Æ¥à
-Group(no):	Applikasjoner/System
-Group(pl):	Aplikacje/System
-Group(pt):	Aplicações/Sistema
-Group(pt_BR):	Aplicações/Sistema
-Group(ru):	ğÒÉÌÏÖÅÎÉÑ/óÉÓÔÅÍÁ
-Group(sl):	Programi/Sistem
-Group(sv):	Tillämpningar/System
-Group(uk):	ğÒÉËÌÁÄÎ¦ ğÒÏÇÒÁÍÉ/óÉÓÔÅÍÁ
 
 %description -n mop_server
 MOP stands from Massive Opinion Project. It (will) allow users to
@@ -90,22 +58,6 @@ zainstalowac. Ten program wci±¿ nie jest skoñczony.
 Summary:	%{name} for bootdisk
 Summary(pl):	%{name} na bootkietkê
 Group:		Applications/System
-Group(cs):	Aplikace/Systém
-Group(da):	Programmer/System
-Group(de):	Applikationen/System
-Group(es):	Aplicaciones/Sistema
-Group(fr):	Applications/Système
-Group(is):	Forrit/Kerfisforrit
-Group(it):	Applicazioni/Sistema
-Group(ja):	¥¢¥×¥ê¥±¡¼¥·¥ç¥ó/¥·¥¹¥Æ¥à
-Group(no):	Applikasjoner/System
-Group(pl):	Aplikacje/System
-Group(pt):	Aplicações/Sistema
-Group(pt_BR):	Aplicações/Sistema
-Group(ru):	ğÒÉÌÏÖÅÎÉÑ/óÉÓÔÅÍÁ
-Group(sl):	Programi/Sistem
-Group(sv):	Tillämpningar/System
-Group(uk):	ğÒÉËÌÁÄÎ¦ ğÒÏÇÒÁÍÉ/óÉÓÔÅÍÁ
 
 %description BOOT
 %{name} for bootdisk.
