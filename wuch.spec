@@ -102,6 +102,9 @@ Group(ru):	Приложения/Система
 Group(sl):	Programi/Sistem
 Group(sv):	TillДmpningar/System
 
+%desription BOOT
+%{name} for bootdisk.
+
 %prep
 %setup -q
 
