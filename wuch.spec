@@ -20,6 +20,7 @@ Group(pt_BR):	AplicaГУes/Sistema
 Group(ru):	Приложения/Система
 Group(sl):	Programi/Sistem
 Group(sv):	TillДmpningar/System
+Group(uk):	Прикладн╕ Програми/Система
 Source0:	ftp://ftp.pld.org.pl/software/wuch/%{name}-%{version}.tar.gz
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -69,6 +70,7 @@ Group(pt_BR):	AplicaГУes/Sistema
 Group(ru):	Приложения/Система
 Group(sl):	Programi/Sistem
 Group(sv):	TillДmpningar/System
+Group(uk):	Прикладн╕ Програми/Система
 
 %description -n mop_server
 MOP stands from Massive Opinion Project. It (will) allow users to
@@ -101,6 +103,7 @@ Group(pt_BR):	AplicaГУes/Sistema
 Group(ru):	Приложения/Система
 Group(sl):	Programi/Sistem
 Group(sv):	TillДmpningar/System
+Group(uk):	Прикладн╕ Програми/Система
 
 %description BOOT
 %{name} for bootdisk.
