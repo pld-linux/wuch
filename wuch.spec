@@ -1,7 +1,7 @@
 Summary:	RPM handler
 Summary(pl):	narzêdzie do obs³ugi RPMów
 Name:		wuch
-Version:	0.19.0
+Version:	0.19.1
 Release:	1
 License:	GPL
 Group:		Applications/System
@@ -23,6 +23,7 @@ BuildRequires:	rpm-devel
 BuildRequires:	slang-devel
 BuildRequires:	trurlib-devel
 BuildRequires:	conflib-static
+Requires:	dml
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_sysconfdir	/etc
