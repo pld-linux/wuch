@@ -1,7 +1,7 @@
 Summary:	RPM handler
 Summary(pl):	narzêdzie do obs³ugi RPMów
 Name:		wuch
-Version:	0.18.2
+Version:	0.19.0
 Release:	1
 License:	GPL
 Group:		Applications/System
@@ -15,6 +15,7 @@ BuildRequires:	db1-devel
 BuildRequires:	newt-devel
 BuildRequires:	popt-devel
 BuildRequires:	postgresql-devel
+BuildRequires:	postgresql-backend-devel
 BuildRequires:	rpm-devel
 BuildRequires:	slang-devel
 BuildRequires:	trurlib-devel
