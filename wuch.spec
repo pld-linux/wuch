@@ -8,18 +8,21 @@ Group:		Applications/System
 Group(de):	Applikationen/System
 Group(pl):	Aplikacje/System
 Source0:	ftp://ftp.pld.org.pl/software/wuch/%{name}-%{version}.tar.gz
+BuildRequires:	autoconf
+BuildRequires:	automake
 BuildRequires:	bzip2-devel
 BuildRequires:	conflib-devel
+BuildRequires:  curl-devel
 BuildRequires:	db3-devel
 BuildRequires:	db1-devel
 BuildRequires:	newt-devel
+BuildRequires:	libtool
 BuildRequires:	popt-devel
 BuildRequires:	postgresql-devel
 BuildRequires:	postgresql-backend-devel
 BuildRequires:	rpm-devel
 BuildRequires:	slang-devel
 BuildRequires:	trurlib-devel
-BuildRequires:  curl-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_sysconfdir	/etc
@@ -61,9 +64,10 @@ Group:		Applications/System
 %setup -q
 
 %build
+rm -f missing
 aclocal
 autoheader
-automake --gnu
+automake -a -c
 autoconf
 
 %if %{?BOOT:1}%{!?BOOT:0}
