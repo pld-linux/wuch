@@ -83,11 +83,8 @@ zaleznych od pakietu, oraz przegladanie tak powstalych statystyk w
 celu zdecydowania czy dany pakiet pracuje wystarczajaco dobrze by go
 zainstalowac. Ten program wci±¿ nie jest skoñczony.
 
-%if %{?BOOT:1}%{!?BOOT:0}
 %package BOOT
 Summary:	%{name} for bootdisk
-%description BOOT
-%endif
 Group:		Applications/System
 Group(cs):	Aplikace/Systém
 Group(da):	Programmer/System
