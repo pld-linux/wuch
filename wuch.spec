@@ -102,7 +102,7 @@ Group(ru):	Приложения/Система
 Group(sl):	Programi/Sistem
 Group(sv):	TillДmpningar/System
 
-%desription BOOT
+%description BOOT
 %{name} for bootdisk.
 
 %prep
