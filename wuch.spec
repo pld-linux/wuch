@@ -82,7 +82,7 @@ rm -rf $RPM_BUILD_ROOT
 %if %{?BOOT:1}%{!?BOOT:0}
 install -d $RPM_BUILD_ROOT/usr/lib/bootdisk/sbin
 install -d $RPM_BUILD_ROOT/usr/lib/bootdisk/usr/lib/wuch/modules
-install -s wuch-BOOT $RPM_BUILD_ROOT/usr/lib/bootdisk/sbin/wuch
+install wuch-BOOT $RPM_BUILD_ROOT/usr/lib/bootdisk/sbin/wuch
 %endif
 
 %{__make} DESTDIR=$RPM_BUILD_ROOT install
