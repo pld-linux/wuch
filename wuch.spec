@@ -28,8 +28,6 @@ BuildRequires:	trurlib-static
 Requires:	dml
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define		_sysconfdir	/etc
-
 %description
 wuch is a tool to allow easy installation/upgrade of RPM packages.
 
@@ -79,7 +77,8 @@ rm -f missing
 %if %{?BOOT:1}%{!?BOOT:0}
 %configure --without-mop-server --disable-shared --disable-modular
 %{__make}
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 install $RPM_BUILD_ROOT%{_bindir}/wuch wuch-BOOT
 %{__make} distclean
 %endif
@@ -96,16 +95,18 @@ install -d $RPM_BUILD_ROOT%{_libdir}/bootdisk%{_libdir}/wuch/modules
 install wuch-BOOT $RPM_BUILD_ROOT%{_libdir}/bootdisk/sbin/wuch
 %endif
 
-%{__make} DESTDIR=$RPM_BUILD_ROOT install
-perl -pi -e "s/i586/%{_target_cpu}/g" $RPM_BUILD_ROOT%{_sysconfdir}/%{name}.conf
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
+
+%{__perl} -pi -e "s/i586/%{_target_cpu}/g" $RPM_BUILD_ROOT%{_sysconfdir}/%{name}.conf
 
 %find_lang %{name}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
-%post -p /sbin/ldconfig
-%postun -p /sbin/ldconfig
+%post	-p /sbin/ldconfig
+%postun	-p /sbin/ldconfig
 
 %files -f %{name}.lang
 %defattr(644,root,root,755)
