@@ -70,8 +70,8 @@ Group:		Applications/System
 
 %build
 rm -f missing
-aclocal
-autoheader
+%{__aclocal}
+%{__autoheader}
 %{__automake}
 %{__autoconf}
 
