@@ -106,7 +106,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files -f %{name}.lang
 %defattr(644,root,root,755)
-%config(noreplace) %{_sysconfdir}/wuch.conf
+%config(noreplace) %verify(not size mtime md5) %{_sysconfdir}/wuch.conf
 %attr(755,root,root) %{_bindir}/wuch
 %attr(755,root,root) %{_libdir}/wuch/modules/*.so
 %attr(755,root,root) %{_libdir}/libwuch.so.0.0.0
