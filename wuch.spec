@@ -136,6 +136,7 @@ install wuch-BOOT $RPM_BUILD_ROOT%{_libdir}/bootdisk/sbin/wuch
 %endif
 
 %{__make} DESTDIR=$RPM_BUILD_ROOT install
+perl -pi -e "s/i586/%{_target_cpu}/g" $RPM_BUILD_ROOT%{_sysconfdir}/%{name}.conf
 
 %find_lang %{name}
 
