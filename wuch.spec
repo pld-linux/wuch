@@ -18,6 +18,7 @@ BuildRequires:	postgresql-devel
 BuildRequires:	rpm-devel
 BuildRequires:	slang-devel
 BuildRequires:	trurlib-devel
+BuildRequires:  curl-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_sysconfdir	/etc
