@@ -5,13 +5,26 @@ Version:	0.20.0
 Release:	1
 License:	GPL
 Group:		Applications/System
+Group(cs):	Aplikace/Systém
+Group(da):	Programmer/System
 Group(de):	Applikationen/System
+Group(es):	Aplicaciones/Sistema
+Group(fr):	Applications/Système
+Group(is):	Forrit/Kerfisforrit
+Group(it):	Applicazioni/Sistema
+Group(ja):	¥¢¥×¥ê¥±¡¼¥·¥ç¥ó/¥·¥¹¥Æ¥à
+Group(no):	Applikasjoner/System
 Group(pl):	Aplikacje/System
+Group(pt):	Aplicações/Sistema
+Group(pt_BR):	Aplicações/Sistema
+Group(ru):	ðÒÉÌÏÖÅÎÉÑ/óÉÓÔÅÍÁ
+Group(sl):	Programi/Sistem
+Group(sv):	Tillämpningar/System
 Source0:	ftp://ftp.pld.org.pl/software/wuch/%{name}-%{version}.tar.gz
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	bzip2-devel
-BuildRequires:  curl-devel
+BuildRequires:	curl-devel
 BuildRequires:	db3-devel
 BuildRequires:	db1-devel
 BuildRequires:	newt-devel
@@ -41,28 +54,56 @@ pakietów RPM.
 %package -n mop_server
 Summary:	mop_server
 Group:		Applications/System
+Group(cs):	Aplikace/Systém
+Group(da):	Programmer/System
 Group(de):	Applikationen/System
+Group(es):	Aplicaciones/Sistema
+Group(fr):	Applications/Système
+Group(is):	Forrit/Kerfisforrit
+Group(it):	Applicazioni/Sistema
+Group(ja):	¥¢¥×¥ê¥±¡¼¥·¥ç¥ó/¥·¥¹¥Æ¥à
+Group(no):	Applikasjoner/System
 Group(pl):	Aplikacje/System
+Group(pt):	Aplicações/Sistema
+Group(pt_BR):	Aplicações/Sistema
+Group(ru):	ðÒÉÌÏÖÅÎÉÑ/óÉÓÔÅÍÁ
+Group(sl):	Programi/Sistem
+Group(sv):	Tillämpningar/System
 
 %description -n mop_server
-MOP stands from Massive Opinion Project. It (will) allow users to grade
-any package from distribution in set of categories (difrent for any package),
-and browse statistic to decide if upgrade some package or not.
-It's still not finished.
+MOP stands from Massive Opinion Project. It (will) allow users to
+grade any package from distribution in set of categories (difrent for
+any package), and browse statistic to decide if upgrade some package
+or not. It's still not finished.
 
 %description -n mop_server -l pl
-MOP to Masowy Projekt Opiniowania pakietów. Umo¿liwi on u¿ytkownikom ocenianie 
-pakietów pochodz±cych z dystrybucji w ró¿nych kategoriach -- zaleznych od 
-pakietu, oraz przegladanie tak powstalych statystyk w celu zdecydowania czy dany
-pakiet pracuje wystarczajaco dobrze by go zainstalowac.
-Ten program wci±¿ nie jest skoñczony.
+MOP to Masowy Projekt Opiniowania pakietów. Umo¿liwi on u¿ytkownikom
+ocenianie pakietów pochodz±cych z dystrybucji w ró¿nych kategoriach --
+zaleznych od pakietu, oraz przegladanie tak powstalych statystyk w
+celu zdecydowania czy dany pakiet pracuje wystarczajaco dobrze by go
+zainstalowac. Ten program wci±¿ nie jest skoñczony.
 
 %if %{?BOOT:1}%{!?BOOT:0}
 %package BOOT
 Summary:	%{name} for bootdisk
-Group:		Applications/System
 %description BOOT
 %endif
+Group:		Applications/System
+Group(cs):	Aplikace/Systém
+Group(da):	Programmer/System
+Group(de):	Applikationen/System
+Group(es):	Aplicaciones/Sistema
+Group(fr):	Applications/Système
+Group(is):	Forrit/Kerfisforrit
+Group(it):	Applicazioni/Sistema
+Group(ja):	¥¢¥×¥ê¥±¡¼¥·¥ç¥ó/¥·¥¹¥Æ¥à
+Group(no):	Applikasjoner/System
+Group(pl):	Aplikacje/System
+Group(pt):	Aplicações/Sistema
+Group(pt_BR):	Aplicações/Sistema
+Group(ru):	ðÒÉÌÏÖÅÎÉÑ/óÉÓÔÅÍÁ
+Group(sl):	Programi/Sistem
+Group(sv):	Tillämpningar/System
 
 %prep
 %setup -q
@@ -89,9 +130,9 @@ install $RPM_BUILD_ROOT%{_bindir}/wuch wuch-BOOT
 rm -rf $RPM_BUILD_ROOT
 
 %if %{?BOOT:1}%{!?BOOT:0}
-install -d $RPM_BUILD_ROOT/usr/lib/bootdisk/sbin
-install -d $RPM_BUILD_ROOT/usr/lib/bootdisk/usr/lib/wuch/modules
-install wuch-BOOT $RPM_BUILD_ROOT/usr/lib/bootdisk/sbin/wuch
+install -d $RPM_BUILD_ROOT%{_libdir}/bootdisk/sbin
+install -d $RPM_BUILD_ROOT%{_libdir}/bootdisk%{_libdir}/wuch/modules
+install wuch-BOOT $RPM_BUILD_ROOT%{_libdir}/bootdisk/sbin/wuch
 %endif
 
 %{__make} DESTDIR=$RPM_BUILD_ROOT install
@@ -120,5 +161,5 @@ rm -rf $RPM_BUILD_ROOT
 %if %{?BOOT:1}%{!?BOOT:0}
 %files BOOT
 %defattr(644,root,root,755)
-%attr(755,root,root) /usr/lib/bootdisk/sbin/*
+%attr(755,root,root) %{_libdir}/bootdisk/sbin/*
 %endif
