@@ -72,7 +72,7 @@ Group:		Applications/System
 rm -f missing
 aclocal
 autoheader
-automake -a -c
+automake -a -c -f
 autoconf
 
 %if %{?BOOT:1}%{!?BOOT:0}
