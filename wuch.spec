@@ -72,8 +72,8 @@ Group:		Applications/System
 rm -f missing
 aclocal
 autoheader
-automake -a -c -f
-autoconf
+%{__automake}
+%{__autoconf}
 
 %if %{?BOOT:1}%{!?BOOT:0}
 %configure --without-mop-server --disable-shared --disable-modular
