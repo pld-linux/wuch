@@ -6,6 +6,7 @@ Release:	1
 License:	GPL
 Group:		Applications/System
 Source0:	ftp://ftp.pld.org.pl/software/wuch/%{name}-%{version}.tar.gz
+# Source0-md5:	4c5663699b18993ac2d3b9a7892563eb
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	bzip2-devel
