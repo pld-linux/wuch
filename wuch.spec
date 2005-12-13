@@ -10,18 +10,18 @@ Source0:	ftp://ftp.pld-linux.org/software/wuch/%{name}-%{version}.tar.gz
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	bzip2-devel
+BuildRequires:	conflib-static
 BuildRequires:	curl-devel
-BuildRequires:	db3-devel
 BuildRequires:	db1-devel
-BuildRequires:	newt-devel
+BuildRequires:	db3-devel
 BuildRequires:	libtool
+BuildRequires:	newt-devel
 BuildRequires:	popt-devel
-BuildRequires:	postgresql-devel
 BuildRequires:	postgresql-backend-devel
+BuildRequires:	postgresql-devel
 BuildRequires:	rpm-devel
 BuildRequires:	slang-devel
 BuildRequires:	trurlib-devel
-BuildRequires:	conflib-static
 %if %{?BOOT:1}%{!?BOOT:0}
 BuildRequires:	trurlib-static
 %endif
@@ -110,7 +110,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files -f %{name}.lang
 %defattr(644,root,root,755)
-%config(noreplace) %verify(not size mtime md5) %{_sysconfdir}/wuch.conf
+%config(noreplace) %verify(not md5 mtime size) %{_sysconfdir}/wuch.conf
 %attr(755,root,root) %{_bindir}/wuch
 %attr(755,root,root) %{_libdir}/wuch/modules/*.so
 %attr(755,root,root) %{_libdir}/libwuch.so.0.0.0
