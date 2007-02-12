@@ -1,5 +1,5 @@
 Summary:	RPM handler
-Summary(pl.UTF-8):   Narzędzie do obsługi RPMów
+Summary(pl.UTF-8):	Narzędzie do obsługi RPMów
 Name:		wuch
 Version:	0.21.2
 Release:	1
@@ -37,7 +37,7 @@ pakietów RPM.
 
 %package -n mop_server
 Summary:	mop_server
-Summary(pl.UTF-8):   Serwer mop
+Summary(pl.UTF-8):	Serwer mop
 Group:		Applications/System
 
 %description -n mop_server
@@ -55,7 +55,7 @@ zainstalowac. Ten program wciąż nie jest skończony.
 
 %package BOOT
 Summary:	%{name} for bootdisk
-Summary(pl.UTF-8):   %{name} na bootkietkę
+Summary(pl.UTF-8):	%{name} na bootkietkę
 Group:		Applications/System
 
 %description BOOT
