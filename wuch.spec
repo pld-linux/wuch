@@ -1,5 +1,5 @@
 Summary:	RPM handler
-Summary(pl):	Narzêdzie do obs³ugi RPMów
+Summary(pl.UTF-8):   NarzÄ™dzie do obsÅ‚ugi RPMÃ³w
 Name:		wuch
 Version:	0.21.2
 Release:	1
@@ -31,13 +31,13 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 wuch is a tool to allow easy installation/upgrade of RPM packages.
 
-%description -l pl
-wuch jest narzêdziem które pozwala na ³atw± instalacjê/upgrade
-pakietów RPM.
+%description -l pl.UTF-8
+wuch jest narzÄ™dziem ktÃ³re pozwala na Å‚atwÄ… instalacjÄ™/upgrade
+pakietÃ³w RPM.
 
 %package -n mop_server
 Summary:	mop_server
-Summary(pl):	Serwer mop
+Summary(pl.UTF-8):   Serwer mop
 Group:		Applications/System
 
 %description -n mop_server
@@ -46,23 +46,23 @@ grade any package from distribution in set of categories (difrent for
 any package), and browse statistic to decide if upgrade some package
 or not. It's still not finished.
 
-%description -n mop_server -l pl
-MOP to Masowy Projekt Opiniowania pakietów. Umo¿liwi on u¿ytkownikom
-ocenianie pakietów pochodz±cych z dystrybucji w ró¿nych kategoriach --
+%description -n mop_server -l pl.UTF-8
+MOP to Masowy Projekt Opiniowania pakietÃ³w. UmoÅ¼liwi on uÅ¼ytkownikom
+ocenianie pakietÃ³w pochodzÄ…cych z dystrybucji w rÃ³Å¼nych kategoriach --
 zaleznych od pakietu, oraz przegladanie tak powstalych statystyk w
 celu zdecydowania czy dany pakiet pracuje wystarczajaco dobrze by go
-zainstalowac. Ten program wci±¿ nie jest skoñczony.
+zainstalowac. Ten program wciÄ…Å¼ nie jest skoÅ„czony.
 
 %package BOOT
 Summary:	%{name} for bootdisk
-Summary(pl):	%{name} na bootkietkê
+Summary(pl.UTF-8):   %{name} na bootkietkÄ™
 Group:		Applications/System
 
 %description BOOT
 %{name} for bootdisk.
 
-%description BOOT -l pl
-%{name} na bootkietkê.
+%description BOOT -l pl.UTF-8
+%{name} na bootkietkÄ™.
 
 %prep
 %setup -q
